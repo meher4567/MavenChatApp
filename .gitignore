@@ -1,0 +1,21 @@
+# Ignore compiled Java classes and build artifacts
+target/
+*.class
+
+# Ignore Maven dependency files
+.mvn/
+**/mvnw
+**/mvnw.cmd
+
+# Ignore IDE-specific files (if using IntelliJ, Eclipse, etc.)
+.idea/
+*.iml
+*.log
+.vscode/
+.classpath
+.project
+.settings/
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
