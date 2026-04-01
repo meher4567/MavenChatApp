@@ -116,7 +116,7 @@ public class ChatServer {
         private void checkAndSendOfflineMessages() {
             System.out.println("Checking for offline messages for " + userName);
             // Retrieve and send offline messages
-            List<Message> offlineMessages = messageDAO.getMessages("Friend 2", userName);
+            List<Message> offlineMessages = messageDAO.getOfflineMessages(userName);
             System.out.println("Found " + offlineMessages.size() + " offline messages for " + userName);
             for (Message message : offlineMessages) {
                 System.out.println("Sending offline message from " + message.getSender() + " to " + userName + ": " + message.getText());
